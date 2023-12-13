@@ -15,7 +15,19 @@
         spline-viewer {
             width: 100vw;
             height: 100vh;
+            height: 100svh;
             display: block;
+        }
+
+        span {
+            display: block;
+            width: 160px;
+            height: 64px;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            z-index: 10;
+            background: #EDEBE7;
         }
     </style>
 
@@ -25,6 +37,7 @@
     <meta property="og:type" content="website" />
 </head>
 <body>
+    <span></span>
     <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.522/build/spline-viewer.js"></script>
     <spline-viewer url="https://prod.spline.design/uKgNWjMBYn13ENf6/scene.splinecode"></spline-viewer>
 </body>
